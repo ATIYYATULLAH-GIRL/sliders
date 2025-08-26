@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SLIDERS</title>
+    </head>
+    <body>
+        <section>
+            <img class="myslides" src="OTHER CAMERA.png" style="height: 500px;">
+            <img class="myslides" src="Zari.png" style="height: 500px;">
+            <img class="myslides" src="learn.png" style="height: 500px;">
+            <img class="myslides" src="WORD CATCHER.jpg" style="height: 500px;">
+            <img class="myslides" src="PHONE SCREEN.jpg" style="height: 500px;">
+            <img class="myslides" src="duolingo.png" style="height: 500px;">
+            <img class="myslides" src="angela.png" style="height: 500px;">
+            <img class="myslides" src="star.png" style="height: 500px;">
+            <img class="myslides" src="codingal.png" style="height: 500px;">
+            <img class="myslides" src="flames.png" style="height: 500px;">
+            <img class="myslides" src="MARS.jpg" style="height: 500px;">
+            <img class="myslides" src="ROCKET.jpg" style="height: 500px;">
+            <img class="myslides" src="DOODLING PICTURE.jpg" style="height: 500px;">
+            <img class="myslides" src="ROCKET BACKGROUND.jpg" style="height: 500px;">
+            <img class="myslides" src="QUIZ GAME BACKGROUND.jpg" style="height: 500px;">
+            <img class="myslides" src="TELESCOPE.png" style="height: 500px;">
+            <img class="myslides" src="CAT.jpg" style="height: 500px;">
+            <img class="myslides" src="THANK YOU.jpg" style="height: 500px;">
+            <img class="myslides" src="FIRE.jpg" style="height: 500px;">
+            <img class="myslides" src="SATURN.jpg" style="height: 500px;">
+        </section>
+        <script>
+            var myIndex=0;
+            carousel();
+
+            function carousel(){
+                var i;
+                var x=document.getElementsByClassName("myslides");
+                for(i=0;i<x.length;i++){
+                    x[i].style.display="none";
+                }
+                myIndex++;
+                if(myIndex>x.length){
+                    myIndex=1
+                }
+                x[myIndex-1].style.display="block";
+                setTimeout(carousel,3000);
+            }
+        </script>
+    </body>
+</html>
